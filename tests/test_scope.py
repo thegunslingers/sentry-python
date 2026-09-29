@@ -1105,7 +1105,7 @@ def test_conversation_id_copy():
 def test_transaction_name_cleared_when_span_unset():
     """Scope._transaction follows span lifecycle:
     set by Transaction, preserved during child Span, cleared on None."""
-    from sentry_sdk.tracing import Transaction, Span
+    from sentry_sdk.tracing import Transaction
 
     scope = Scope()
 
